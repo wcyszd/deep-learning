@@ -1,49 +1,24 @@
 import numpy as np
-# import matplotlib.pyplot as plt
 
-# 生成数组
 x = np.array([1.0, 2.0, 3.0])
 print(x)
+print(type(x))
 
-type(x)
-
-# 算术运算
-x = np.array([1.0, 2.0, 3.0])
 y = np.array([2.0, 4.0, 6.0])
+z = x + y  # 运算
+print(z)
 
-x + y
-
-x / 2.0
-
-# N维数组
 A = np.array([[1, 2], [3, 4]])
-print(A)
-A.shape # 矩阵 A 的形状可以通过 shape 查看
-A.dtype # 矩阵元素的数据类型可以通过 dtype 查看
+print(A, "\n")
+# print(A.shape)
+print(A[0], "\n")
 
-B = np.array([[3, 0], [0, 6]])
-A + B
-A * B
-
-# 广播（标量扩展）
-A = np.array([[1, 2], [3, 4]])
-B = np.array([10, 20])
-A * B
-
-X = np.array([[51, 55], [14, 19], [0, 4]])
-print(X)
-
-X[0]
-X[0][1]
-
-for row in X:
+for row in A:
     print(row)
 
-X = X.flatten()
-print(X)
+print("")
 
-X[np.array([0, 2, 4])]
-# array([51, 14, 0])
+x = A.flatten()  # 转换为一维数组
+print(x, '\n')
 
-X > 15
-X[X > 15]
+print(x[np.array([0, 2])], '\n')  # 获取索引为0，2的元素
