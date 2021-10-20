@@ -1,20 +1,20 @@
 import numpy as np
 
-# 与门
-# def AND(x1, x2):
-#     w1, w2, theta = 0.5, 0.5, 0.7
-#     tmp = x1 * w1 + x2 * w2
-#     if tmp <= theta:
-#         return 0
-#     elif tmp > theta:
-#         return 1
+与门
+def AND(x1, x2):
+    w1, w2, theta = 0.5, 0.5, 0.7
+    tmp = x1 * w1 + x2 * w2
+    if tmp <= theta:
+        return 0
+    elif tmp > theta:
+        return 1
 
 
 # 与门 与门仅在两个输入均为 1 时输出 1，其他时候则输出 0
 def AND(x1, x2):
-    x = np.array([x1, x2]) # w1 和 w2 是控制输入信号的重要性的参数
-    w = np.array([0.5, 0.5]) # 偏置是调整神经元被激活的容易程度（输出信号为 1 的程度）的参数
-    b = -0.7
+    x = np.array([x1, x2]) 
+    w = np.array([0.5, 0.5])  # w1 和 w2 是控制输入信号的重要性的参数 
+    b = -0.7   # 偏置是调整神经元被激活的容易程度（输出信号为 1 的程度）的参数
     tmp = np.sum(w * x) + b
     if tmp <= 0:
         return 0

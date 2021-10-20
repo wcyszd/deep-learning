@@ -15,6 +15,7 @@ load_mnist(normalize=True, flatten=True, one_hot_label=False)
 '''
 import sys, os
 sys.path.append(os.pardir) # .. 上级目录 （父目录加入sys.path - python的搜索模块路径集）
+#使父目录下其他文件都可以被搜索导入
 import numpy as np
 from dataset.mnist import load_mnist
 from PIL import Image
