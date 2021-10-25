@@ -70,7 +70,7 @@ if __name__ == "__main__":
     # 基于批处理的代码实现
     batch_size = 100
 
-    for i in range(0, len(x), batch_size):
+    for i in range(0, len(x), batch_size): #以100为步长
         x_batch = x[i:i+batch_size]
         y_batch = predict(network, x_batch)
         # axis=1 这指定了在100 × 10的数组中，沿着第1维方向（以第1维为轴）找到值最大的元素的索引（第0维对应第1个维度）
