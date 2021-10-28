@@ -14,7 +14,7 @@
 - 虽然梯度的方向并不一定指向最小值，但沿着它的方向能够最大限度地减小函数的值
 - ![image](https://user-images.githubusercontent.com/45821845/139241067-7ff90ec1-0602-45c0-8b4a-ffa27c21760f.png)
 - 要让loss函数最小，就求loss函数对w，b的梯度，然后来对w，b更新
-- ![image](https://user-images.githubusercontent.com/45821845/139248592-4976ef15-9676-4663-894c-a439bf6028e3.png)
+- ![image](https://user-images.githubusercontent.com/45821845/139248788-f77334f3-52f9-4f9d-8c19-286d715faa18.png)
 
 
 ### 学习步骤
